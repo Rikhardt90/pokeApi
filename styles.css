@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
@@ -28,6 +33,7 @@ body {
 
 .navbarImg {
   width: 200px;
+  margin: 0;
 }
 
 section {
@@ -42,7 +48,7 @@ section {
   border-color: rgb(255, 196, 1);
   border-radius: 30px;
 
-  width: 300px;
+  width: 350px;
   margin: 10px;
 }
 
@@ -53,11 +59,12 @@ img {
 }
 
 .divImg {
-  margin: 20px;
+  object-fit: cover;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 220px;
   width: 250px;
   border: 10px;
   border-style: solid;
@@ -74,11 +81,13 @@ img {
 }
 
 .divAbility {
+
+
   margin: 10px;
   border-style: solid;
   border-radius: 10px;
   background-color: rgb(253, 244, 189);
-  justify-content: flex-start;
+
 }
 
 .divText {
