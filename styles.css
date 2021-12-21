@@ -4,11 +4,14 @@
 }
 
 body {
+  background-color: red;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .navbar {
@@ -17,6 +20,8 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  border-bottom: solid;
+  border-color: black;
   display: flex;
   justify-content: center;
 }
@@ -25,49 +30,69 @@ body {
   width: 200px;
 }
 
-div {
-  background-color: blue;
+section {
+  background-image: url(./assets/img/div-bg.png);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  border: 20px;
   border-style: solid;
-  border-color: yellow;
-  border-radius: 20px;
+  border-color: rgb(255, 196, 1);
+  border-radius: 30px;
 
   width: 300px;
   margin: 10px;
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   object-fit: contain;
 }
 
 .divImg {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 250px;
+  border: 10px;
+  border-style: solid;
+  border-color: rgb(255, 196, 1);
 
-  border-style: inset;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .divName {
-  border-style: none;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(253, 244, 189);
 }
 
 .divAbility {
-  border-style: none;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(253, 244, 189);
+  justify-content: flex-start;
 }
 
 .divText {
-  border-style: none;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(253, 244, 189);
+  margin-top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+h2,
+h3 {
+  margin: 5px;
 }

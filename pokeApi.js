@@ -69,7 +69,7 @@ const getPokemon = async () => {
       pokeBg = "./assets/img/fairy-bg.jpg";
     }
 
-    div$$ = document.createElement("div");
+    div$$ = document.createElement("section");
 
     div$$.innerHTML = `<div class="divName"><h2>#${pokeId} ${pokeName.toUpperCase()}</h2></div>
 
