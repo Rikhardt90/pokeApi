@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* font-family: 'Press Start 2P', cursive; */
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
 body {
@@ -14,26 +12,34 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 120px;
+  padding-top: 210px;
   padding-left: 200px;
   padding-right: 200px;
 }
 
 .navbar {
   background-color: red;
-  color: whitesmoke;
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: solid;
-  border-color: black;
+  border-bottom: solid black 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
-.navbarImg {
+.navbarImg1 {
   width: 200px;
-  margin: 0;
+  padding-left: 50px;
+}
+.navbarImg2 {
+  width: 200px;
+  padding-right: 50px;
+}
+
+input {
+  margin-top: 30px;
+  height: 50px;
 }
 
 section {
@@ -43,13 +49,18 @@ section {
   flex-direction: column;
   align-items: center;
 
-  border: 20px;
-  border-style: solid;
-  border-color: rgb(255, 196, 1);
+  border: solid 20px rgb(255, 217, 1);
+  /* border-style: solid;
+  border-color: rgb(255, 196, 1); */
   border-radius: 30px;
 
-  width: 350px;
+  width: 400px;
   margin: 10px;
+}
+section:hover {
+  transform: scale(1.1);
+  margin-right: 40px;
+  margin-left: 26px;
 }
 
 img {
@@ -75,19 +86,16 @@ img {
 
 .divName {
   margin: 10px;
-  border-style: solid;
+  border-style: groove;
   border-radius: 10px;
   background-color: rgb(253, 244, 189);
 }
 
 .divAbility {
-
-
   margin: 10px;
   border-style: solid;
   border-radius: 10px;
   background-color: rgb(253, 244, 189);
-
 }
 
 .divText {
