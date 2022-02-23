@@ -1,4 +1,4 @@
-const getPokemon = async () => {
+const getPokemonList = async () => {
   for (let i = 1; i < 252; i++) {
     const pokemonApi = await fetch("https://pokeapi.co/api/v2/pokemon/" + i);
     const pokemonRes = await pokemonApi.json();
@@ -72,20 +72,14 @@ const getPokemon = async () => {
     div$$ = document.createElement("section");
 
     div$$.innerHTML = `<div class="divName"><h2>#${pokeId} ${pokeName.toUpperCase()}</h2></div>
-
             <div class="divImg" style="background-image: url(${pokeBg})"><img src="${pokeImg}"/></div>
-            
             <div class="divAbility"><h3>Habilidad: ${pokeAbility}</h3></div>
             <div class="divText">
-            <h3>Altura: ${pokeHeight / 10} m</h3> <h3>Peso: ${
-      pokeWeight / 10
-    } kg</h3>
+            <h3>Altura: ${pokeHeight / 10} m</h3> <h3>Peso: ${pokeWeight / 10} kg</h3>
             </div>`;
 
     document.body.appendChild(div$$);
   }
 };
 
-
-
-getPokemon();
+getPokemonList();
