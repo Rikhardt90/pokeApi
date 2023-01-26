@@ -75,7 +75,9 @@ const getPokemonList = async () => {
             <div class="divImg" style="background-image: url(${pokeBg})"><img src="${pokeImg}"/></div>
             <div class="divAbility"><h3>Habilidad: ${pokeAbility}</h3></div>
             <div class="divText">
-            <h3>Altura: ${pokeHeight / 10} m</h3> <h3>Peso: ${pokeWeight / 10} kg</h3>
+            <h3>Altura: ${pokeHeight / 10} m</h3> <h3>Peso: ${
+      pokeWeight / 10
+    } kg</h3>
             </div>`;
 
     document.body.appendChild(div$$);
